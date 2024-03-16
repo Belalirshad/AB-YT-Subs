@@ -17,7 +17,8 @@ const options = {
     info: {
       title: "Get Yotube Subcribers",
       version: "1.0.0",
-      description: "A Minimal Express API To Get Youtube Subscribers",
+      description:
+        "A Minimal Express API To Get Youtube Subscribers by Belal Irshad",
     },
     servers: [
       {
