@@ -21,7 +21,7 @@ const options = {
     },
     servers: [
       {
-        url: "https://test-0ggr.onrender.com/",
+        url: "https://ab-yt-subs.onrender.com/",
       },
       {
         url: "http://localhost:3000/",
