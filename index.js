@@ -1,11 +1,41 @@
 const express = require("express");
 const app = require("./src/app");
 const mongoose = require("mongoose");
+const swaggerUI = require("swagger-ui-express");
+const swaggerJsDoc = require("swagger-jsdoc");
+const cors = require("cors");
 const port = 3000;
 
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+// options for swagger ui docs
+const options = {
+  definition: {
+    openapi: "3.0.0",
+    info: {
+      title: "Get Yotube Subcribers",
+      version: "1.0.0",
+      description: "A Minimal Express API To Get Youtube Subscribers",
+    },
+    servers: [
+      {
+        url: "https://test-0ggr.onrender.com/",
+      },
+      {
+        url: "http://localhost:3000/",
+      },
+    ],
+  },
+  apis: ["./src/app.js"],
+};
+
+const specs = swaggerJsDoc(options);
+app.use("/", swaggerUI.serve, swaggerUI.setup(specs));
+
+// enabling cors to get over CORS Restriction
+app.use(cors());
 
 // Connect to DATABASE
 const DATABASE_URL =
