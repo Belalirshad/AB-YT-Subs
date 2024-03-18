@@ -11,30 +11,30 @@ Web Deployment : https://ab-yt-subs.onrender.com/
 ## API Endpoints
 
 1. **"/ "** -> This default route will render the "index.html file" when the app launches. 
-![Main_G_YT_s](https://github.com/zainab3702/AB_Get_Youtube_Subscribers/assets/144930831/45cb70d7-0023-44b9-baea-775706654136)
 
+  ![Main](https://github.com/Belalirshad/AB-YT-Subs/assets/101103105/86613045-8cf3-4db9-b88f-d8be44699c97)
 
-3. https://ab-get-youtube-subscribers-zf71.onrender.com/api-docs -> This route for Swagger Docs.
+2. **"https://ab-yt-subs.onrender.com/api-docs#/"** -> This route for Swagger Docs.
    
-![Swagger](https://github.com/zainab3702/AB_Get_Youtube_Subscribers/assets/144930831/5b4e5d8f-9635-47fa-a144-4394e858ba93)
+  ![Swagger](https://github.com/Belalirshad/AB-YT-Subs/assets/101103105/25edd61d-0082-4b19-9237-9e79d251fda1)
 
-3. **"/subscribers "** -> This endpoint returns an array of all subscribers in the database. https://ab-get-youtube-subscribers-zf71.onrender.com/subscribers
+3. **"/subscribers "** -> This endpoint returns an array of all subscribers in the database. https://ab-yt-subs.onrender.com/subscribers/
 
-![Subscribers](https://github.com/zainab3702/AB_Get_Youtube_Subscribers/assets/144930831/c075344e-c938-47a9-9a7b-67d048b01b52)
+  ![Subs](https://github.com/Belalirshad/AB-YT-Subs/assets/101103105/fc48f616-a811-49b1-987f-20a2d636a6f4)
 
-4. **"/subscribers/names "** -> This endpoint returns an array of subscribers with only two fields, their name and subscribed channel. https://ab-get-youtube-subscribers-zf71.onrender.com/subscribers/names
+4. **"/subscribers/names "** -> This endpoint returns an array of subscribers with only two fields, their name and subscribed channel. https://ab-yt-subs.onrender.com/subscribers/name
+   
+  ![Subs_names](https://github.com/Belalirshad/AB-YT-Subs/assets/101103105/2162b52f-e1ed-4930-975f-84821702853d)
 
-![Subs_by_names](https://github.com/zainab3702/AB_Get_Youtube_Subscribers/assets/144930831/3db2accd-4a48-47d4-bb71-176b8fc06f34)
+5. **"/subscribers/:id "** -> This returns the details of subscriber whose Id is provided in endpoint. https://ab-yt-subs.onrender.com/subscribers/65f485ad87f64a503e4cbba1
 
-5. **"/subscribers/:id "** -> This returns the details of subscriber whose Id is provided in endpoint. https://ab-get-youtube-subscribers-zf71.onrender.com/subscribers/:id
-
-![Subs_by_id](https://github.com/zainab3702/AB_Get_Youtube_Subscribers/assets/144930831/ebc4c400-bca8-4d8a-aed4-6dc4a67281f6)
-
+  ![Id](https://github.com/Belalirshad/AB-YT-Subs/assets/101103105/c53c4db8-0044-4e4c-8707-c166439da228)
+  
 ## Application Folder Structure
 
 1. [src/app.js] -> For handling requests and responses.
 
-2. [src/index.js] -> To connect and start the server.
+2. [../index.js] -> To connect and start the server.
 
 3. [src/createDatabase.js] -> To create database on MongoDB.
 
@@ -49,10 +49,10 @@ Web Deployment : https://ab-yt-subs.onrender.com/
 │   ├── app.js
 │   ├── createDatabase.js
 │   ├── data.js
-|   ├── index.js
 │   ├── index.html
 │   └── models/
 │       ├── subscribers.js
+├── index.js
 ├── {} package-lock.json
 └── {}package.json
 ```
@@ -79,5 +79,5 @@ Following dependencie are needed to run this application:
 
 ## Team Memebers
 
-- Zainab Faiqua
 - Belal Irshad
+- Zainab Faiqua
