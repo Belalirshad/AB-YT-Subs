@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha '__tests__/*.js' --reporter mochawesome --recursive  --timeout 60000 --exit",
+    "test": "mocha db.test.js",
     "start": "node index.js"
   },
   "author": "",
@@ -19,8 +19,8 @@
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
+    "chai": "^4.4.1",
+    "chai-http": "^4.4.0",
     "mocha": "^10.3.0"
   },
   "description": ""
