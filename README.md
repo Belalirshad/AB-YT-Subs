@@ -6,12 +6,11 @@ This is a simple backend project that contains a RESTful API for getting inform
 
 The API has several endpoints that let users get data in JSON format, such as an endpoint that returns a list of all subscribers, an endpoint that returns a list of names and subscribed channels for each subscriber, and an endpoint that returns information about a subscriber based on their ID.
 
-Web Deployment : https://ab-get-youtube-subscribers-zf71.onrender.com
+Web Deployment : https://ab-yt-subs.onrender.com/
 
 ## API Endpoints
 
-1. **"/ "** -> This default route will render the "index.html file" when the app launches.
-2. 
+1. **"/ "** -> This default route will render the "index.html file" when the app launches. 
 ![Main_G_YT_s](https://github.com/zainab3702/AB_Get_Youtube_Subscribers/assets/144930831/45cb70d7-0023-44b9-baea-775706654136)
 
 
